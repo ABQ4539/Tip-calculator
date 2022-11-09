@@ -27,7 +27,7 @@
           <p class="title">Bill</p>
             <span class="amount">
               <img class="icons" src="./images/icon-dollar.svg" alt="">
-              <input class="input-field" type="text" name="bill" id="billValue" placeholder="0">
+              <input class="input-field" type="number" name="bill" id="billValue" placeholder="0" required="required">
             </span>
         </div>
 
@@ -39,15 +39,15 @@
             <div class="grid-item"><button class="btn" id="fifteen">15%</button></div>
             <div class="grid-item"><button class="btn" id="twenty">25%</button></div>
             <div class="grid-item"><button class="btn" id="fifty">50%</button></div>
-            <div class="grid-item"><input class="btn" id="custom" type="text" name="custom" placeholder="Custom"></div>
+            <div class="grid-item"><input class="btn" required="required" id="custom" type="number" placeholder="Custom"></div>
           </div>
         </div>
 
-        <div class="containers" >
+        <div class="containers" id="no-of-people">
           <p class="title">Number of People</p>
           <span class="amount">
             <img class="icons" id="icons-people" src="./images/icon-person.svg" alt="">
-            <input class="input-field" type="text" name="people" id="people" placeholder="0">
+            <input class="input-field" type="number" name="people" id="people" placeholder="0" required="required">
           </span>
         </div>
 

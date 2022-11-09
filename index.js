@@ -134,9 +134,9 @@ custom.addEventListener("keypress", function(e) {
 })
 
 reset.addEventListener("click", function() {
-    bill.value = 0;
-    people.value = 0;
-    custom.value = "Custom";
+    bill.value = "";
+    people.value = "";
+    custom.value = "";
     tipAmountValue.innerHTML = "$0.00"
     totalValue.innerHTML = "$0.00"
 })
