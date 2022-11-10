@@ -27,13 +27,20 @@ five.addEventListener("click", function() {
     tipAmountPerPerson = tipAmount / noOfPeople
     totalAmount = +tipAmount + +billVal
     totalAmountPerPerson = totalAmount/noOfPeople
-    console.log(billVal);
-    console.log(noOfPeople);
+    let peopleStyle = document.getElementById("people-span");
+    let spanTitle = document.getElementById("span-title");
+    if (tipAmount === 0 || tipAmountPerPerson === Infinity) {
+        tipAmountValue.innerHTML = "Error"
+        totalValue.innerHTML = "Error"
+        peopleStyle.style.border = "2px solid red";
+        spanTitle.style.display = "initial";
+    } else {
+        tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
+        totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+    }
     console.log(tipAmount);
     console.log(tipAmountPerPerson);
-
-    tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
-    totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+    console.log(peopleStyle);
 })
 
 ten.addEventListener("click", function() {
@@ -44,15 +51,20 @@ ten.addEventListener("click", function() {
     tipAmountPerPerson = tipAmount / noOfPeople
     totalAmount = +tipAmount + +billVal
     totalAmountPerPerson = totalAmount / noOfPeople
-    console.log(billVal);
-    console.log(noOfPeople);
+    let peopleStyle = document.getElementById("people-span");
+    let spanTitle = document.getElementById("span-title");
+    if (tipAmount === 0 || tipAmountPerPerson === Infinity) {
+        tipAmountValue.innerHTML = "Error"
+        totalValue.innerHTML = "Error"
+        peopleStyle.style.border = "2px solid red";
+        spanTitle.style.display = "initial";
+    } else {
+        tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
+        totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+    }
     console.log(tipAmount);
     console.log(tipAmountPerPerson);
-    console.log(totalAmount);
-    console.log(totalAmountPerPerson);
-
-    tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
-    totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+    console.log(peopleStyle);
 })
 
 fifteen.addEventListener("click", function() {
@@ -63,15 +75,20 @@ fifteen.addEventListener("click", function() {
     tipAmountPerPerson = tipAmount / noOfPeople
     totalAmount = +tipAmount + +billVal
     totalAmountPerPerson = totalAmount / noOfPeople
-    console.log(billVal);
-    console.log(noOfPeople);
+    let peopleStyle = document.getElementById("people-span");
+    let spanTitle = document.getElementById("span-title");
+    if (tipAmount === 0 || tipAmountPerPerson === Infinity) {
+        tipAmountValue.innerHTML = "Error"
+        totalValue.innerHTML = "Error"
+        peopleStyle.style.border = "2px solid red";
+        spanTitle.style.display = "initial";
+    } else {
+        tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
+        totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+    }
     console.log(tipAmount);
     console.log(tipAmountPerPerson);
-    console.log(totalAmount);
-    console.log(totalAmountPerPerson);
-
-    tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
-    totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+    console.log(peopleStyle);
 })
 
 twenty.addEventListener("click", function() {
@@ -82,15 +99,20 @@ twenty.addEventListener("click", function() {
     tipAmountPerPerson = tipAmount / noOfPeople
     totalAmount = +tipAmount + +billVal
     totalAmountPerPerson = totalAmount / noOfPeople
-    console.log(billVal);
-    console.log(noOfPeople);
+    let peopleStyle = document.getElementById("people-span");
+    let spanTitle = document.getElementById("span-title");
+    if (tipAmount === 0 || tipAmountPerPerson === Infinity) {
+        tipAmountValue.innerHTML = "Error"
+        totalValue.innerHTML = "Error"
+        peopleStyle.style.border = "2px solid red";
+        spanTitle.style.display = "initial";
+    } else {
+        tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
+        totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+    }
     console.log(tipAmount);
     console.log(tipAmountPerPerson);
-    console.log(totalAmount);
-    console.log(totalAmountPerPerson);
-
-    tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
-    totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+    console.log(peopleStyle);
 })
 
 fifty.addEventListener("click", function() {
@@ -101,15 +123,20 @@ fifty.addEventListener("click", function() {
     tipAmountPerPerson = tipAmount / noOfPeople
     totalAmount = +tipAmount + +billVal
     totalAmountPerPerson = totalAmount / noOfPeople
-    console.log(billVal);
-    console.log(noOfPeople);
+    let peopleStyle = document.getElementById("people-span");
+    let spanTitle = document.getElementById("span-title");
+    if (tipAmount === 0 || tipAmountPerPerson === Infinity) {
+        tipAmountValue.innerHTML = "Error"
+        totalValue.innerHTML = "Error"
+        peopleStyle.style.border = "2px solid red";
+        spanTitle.style.display = "initial";
+    } else {
+        tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
+        totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+    }
     console.log(tipAmount);
     console.log(tipAmountPerPerson);
-    console.log(totalAmount);
-    console.log(totalAmountPerPerson);
-
-    tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
-    totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+    console.log(peopleStyle);
 })
 
 custom.addEventListener("keypress", function(e) {
@@ -121,22 +148,31 @@ custom.addEventListener("keypress", function(e) {
         tipAmountPerPerson = tipAmount / noOfPeople
         totalAmount = +tipAmount + +billVal
         totalAmountPerPerson = totalAmount / noOfPeople
-        console.log(billVal);
-        console.log(noOfPeople);
+        let peopleStyle = document.getElementById("people-span");
+        let spanTitle = document.getElementById("span-title");
+        if (tipAmount === 0 || tipAmountPerPerson === Infinity) {
+            tipAmountValue.innerHTML = "Error"
+            totalValue.innerHTML = "Error"
+            peopleStyle.style.border = "2px solid red";
+            spanTitle.style.display = "initial";
+        } else {
+            tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
+            totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+        }
         console.log(tipAmount);
         console.log(tipAmountPerPerson);
-        console.log(totalAmount);
-        console.log(totalAmountPerPerson);
-
-        tipAmountValue.innerHTML = "$" + tipAmountPerPerson.toFixed(2)
-        totalValue.innerHTML = "$" + totalAmountPerPerson.toFixed(2)
+        console.log(peopleStyle);
     }
 })
 
 reset.addEventListener("click", function() {
+    let peopleStyle = document.getElementById("people-span");
+    let spanTitle = document.getElementById("span-title")
     bill.value = "";
     people.value = "";
     custom.value = "";
     tipAmountValue.innerHTML = "$0.00"
     totalValue.innerHTML = "$0.00"
+    peopleStyle.style.border = "none";
+    spanTitle.style.display = "none";
 })
