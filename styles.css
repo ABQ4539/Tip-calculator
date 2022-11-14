@@ -29,13 +29,14 @@ input:focus, textarea:focus, select:focus{
 body {
     font-family: 'Space Mono', monospace;
     font-size: 1.4rem;
+    background-color: var(--light-grayish-cyan);
 }
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--light-grayish-cyan);
+    
     min-width: 369px;
 }
 .header {
@@ -47,8 +48,7 @@ body {
     flex-direction: column;
     padding: 1.2rem;
     margin-bottom: 2rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
 }
 .containers {
     margin-bottom: 2rem;
@@ -59,7 +59,7 @@ body {
     font-size: 1rem;
 }
 .icons {
-    width: 14px;
+    width: 0.875rem;
     height: fit-content;
     padding-top: 0.4rem;
 }
@@ -107,7 +107,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .btn:hover {
      color: var(--very-dark-cyan);
-     background-color: var(--light-grayish-cyan);
+     background-color: var(--strong-cyan);
      cursor: pointer;
 }
 #custom {
@@ -124,7 +124,7 @@ input[type="number"]::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-between;
 }
-#no-of-people span:hover{
+#no-of-people > span:hover{
     border: 2px solid var(--light-grayish-cyan);
     cursor: pointer;
 }
@@ -151,7 +151,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .result {
     color: var(--strong-cyan);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .reset-button {
     width: 100%;
@@ -168,10 +168,67 @@ input[type="number"]::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-
+@media screen and (min-width: 786px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        min-width: 40rem;
+        font-size: 1rem;
+        padding: 2rem;
+        margin: 3rem auto;
+    }
+    .containers {
+        margin-bottom: 1rem;
+    }
+    .right-side .containers {
+        margin-bottom: 1.5rem;
+    }
+    .title {
+        font-size: 0.7rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+    .icons {
+        padding-top: 0.1rem;
+    }
+    #icons-people {
+        padding-top: 0.3rem;
+    }
+    .buttons-grid-container {
+        grid-template-columns: auto auto auto;
+    }
+    .grid-item {
+        margin: 0.3rem;
+    }
+    .btn {
+        width: 5.9rem;
+        border: none;
+        border-radius: 0.3rem;
+        padding: 0.5rem 1rem;
+    }
+    #calculations {
+        margin-left: 2rem;
+        margin-bottom: 0rem;
+        padding: 1.5rem 1.8rem;
+        width: 20rem;
+        height: 22rem;
+    }
+    .results-container p {
+        font-size: 0.7rem;
+        margin-top: 1.2rem;
+    }
+    .result {
+        font-size: 2.1rem;
+    }
+    .reset-button {
+        margin-top: 7.2rem;
+    }
+}
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 0.688rem; 
     text-align: center;
 }
 .attribution a {
